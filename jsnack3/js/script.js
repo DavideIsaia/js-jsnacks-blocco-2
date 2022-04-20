@@ -10,9 +10,12 @@ let i = 1;
 while (i <= userNumber) {
 
     // all'interno del cilo faccio il cubo **3 di tutti i numeri da 1 a N
-    let cube = i**3; 
+    let cube = i**3;
+
     // stampo il risultato
-    console.log(i, "al cubo=", cube);
-    document.getElementById('message').innerHTML = `${i} al cubo = ${cube}`
+    console.log(i, "al cubo =", cube);
+    document.getElementById('message').innerHTML += `${i} al cubo = ${cube} <br>`
+
+    // incremento il contatore
     i++;
 }
