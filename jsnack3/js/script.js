@@ -5,16 +5,14 @@ let userNumber = parseInt(prompt("Inserisci un numero"));
 console.log(userNumber);
 
 // creo un ciclo che va da 1 a N
-i = 1;
+let i = 1;
 
-let cube = 0;
-
-while (i < userNumber) {
+while (i <= userNumber) {
 
     // all'interno del cilo faccio il cubo **3 di tutti i numeri da 1 a N
-    cube = userNumber*userNumber*userNumber; 
+    let cube = i**3; 
+    // stampo il risultato
+    console.log(i, "al cubo=", cube);
+    document.getElementById('message').innerHTML = `${i} al cubo = ${cube}`
     i++;
 }
-
-// stampo il risultato
-console.log(cube);
